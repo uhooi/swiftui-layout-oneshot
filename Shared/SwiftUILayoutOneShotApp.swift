@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUILayoutOneShotApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView001(text: "Hello, world!")
         }
     }
 }

@@ -9,19 +9,18 @@
 /* Begin PBXBuildFile section */
 		4BA8D4B2287ECB7E00691061 /* SwiftUILayoutOneShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A2287ECB7D00691061 /* SwiftUILayoutOneShotApp.swift */; };
 		4BA8D4B3287ECB7E00691061 /* SwiftUILayoutOneShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A2287ECB7D00691061 /* SwiftUILayoutOneShotApp.swift */; };
-		4BA8D4B4287ECB7E00691061 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A3287ECB7D00691061 /* ContentView.swift */; };
-		4BA8D4B5287ECB7E00691061 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A3287ECB7D00691061 /* ContentView.swift */; };
 		4BA8D4B6287ECB7E00691061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A4287ECB7E00691061 /* Assets.xcassets */; };
 		4BA8D4B7287ECB7E00691061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A4287ECB7E00691061 /* Assets.xcassets */; };
+		4BD1D5D2287ECCF5002C0903 /* MainView001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D5D1287ECCF5002C0903 /* MainView001.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BA8D4A2287ECB7D00691061 /* SwiftUILayoutOneShotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILayoutOneShotApp.swift; sourceTree = "<group>"; };
-		4BA8D4A3287ECB7D00691061 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BA8D4A4287ECB7E00691061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BA8D4A9287ECB7E00691061 /* SwiftUILayoutOneShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILayoutOneShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA8D4AF287ECB7E00691061 /* SwiftUILayoutOneShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILayoutOneShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA8D4B1287ECB7E00691061 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4BD1D5D1287ECCF5002C0903 /* MainView001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView001.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +53,8 @@
 		4BA8D4A1287ECB7D00691061 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4BD1D5CF287ECCB2002C0903 /* Challenges */,
 				4BA8D4A2287ECB7D00691061 /* SwiftUILayoutOneShotApp.swift */,
-				4BA8D4A3287ECB7D00691061 /* ContentView.swift */,
 				4BA8D4A4287ECB7E00691061 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +75,22 @@
 				4BA8D4B1287ECB7E00691061 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		4BD1D5CE287ECC83002C0903 /* 001 */ = {
+			isa = PBXGroup;
+			children = (
+				4BD1D5D1287ECCF5002C0903 /* MainView001.swift */,
+			);
+			path = 001;
+			sourceTree = "<group>";
+		};
+		4BD1D5CF287ECCB2002C0903 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				4BD1D5CE287ECC83002C0903 /* 001 */,
+			);
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA8D4B4287ECB7E00691061 /* ContentView.swift in Sources */,
+				4BD1D5D2287ECCF5002C0903 /* MainView001.swift in Sources */,
 				4BA8D4B2287ECB7E00691061 /* SwiftUILayoutOneShotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +200,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA8D4B5287ECB7E00691061 /* ContentView.swift in Sources */,
 				4BA8D4B3287ECB7E00691061 /* SwiftUILayoutOneShotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
