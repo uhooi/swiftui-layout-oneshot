@@ -25,6 +25,7 @@ public struct MainView: View {
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
         }
+        .padding()
     }
 }
 
