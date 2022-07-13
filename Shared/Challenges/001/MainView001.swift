@@ -5,6 +5,8 @@
 //  Created by uhooi on 2022/07/13.
 //
 
+// Challenge: https://twitter.com/treastrain/status/1547154171379724289
+
 import SwiftUI
 
 struct MainView001: View {
