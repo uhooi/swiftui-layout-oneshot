@@ -1,4 +1,4 @@
-# swiftui-layout-oneshot
+# SwiftUI layout one-shot
 
 「SwiftUIレイアウト一本勝負」解答用のリポジトリです。
 
