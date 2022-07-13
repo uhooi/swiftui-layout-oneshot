@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B00FDAE287EE32300EBBCC1 /* AppModule in Frameworks */ = {isa = PBXBuildFile; productRef = 4B00FDAD287EE32300EBBCC1 /* AppModule */; };
+		4B00FDB0287EE33900EBBCC1 /* AppModule in Frameworks */ = {isa = PBXBuildFile; productRef = 4B00FDAF287EE33900EBBCC1 /* AppModule */; };
 		4BA8D4B2287ECB7E00691061 /* SwiftUILayoutOneShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A2287ECB7D00691061 /* SwiftUILayoutOneShotApp.swift */; };
 		4BA8D4B3287ECB7E00691061 /* SwiftUILayoutOneShotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A2287ECB7D00691061 /* SwiftUILayoutOneShotApp.swift */; };
 		4BA8D4B6287ECB7E00691061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A4287ECB7E00691061 /* Assets.xcassets */; };
 		4BA8D4B7287ECB7E00691061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA8D4A4287ECB7E00691061 /* Assets.xcassets */; };
-		4BD1D5D2287ECCF5002C0903 /* MainView001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D5D1287ECCF5002C0903 /* MainView001.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,6 @@
 		4BA8D4A9287ECB7E00691061 /* SwiftUILayoutOneShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILayoutOneShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA8D4AF287ECB7E00691061 /* SwiftUILayoutOneShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILayoutOneShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA8D4B1287ECB7E00691061 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		4BD1D5D1287ECCF5002C0903 /* MainView001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView001.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B00FDAE287EE32300EBBCC1 /* AppModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,25 +36,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B00FDB0287EE33900EBBCC1 /* AppModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B00FDAC287EE32300EBBCC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BA8D49C287ECB7D00691061 = {
 			isa = PBXGroup;
 			children = (
 				4BA8D4A1287ECB7D00691061 /* Shared */,
 				4BA8D4B0287ECB7E00691061 /* macOS */,
 				4BA8D4AA287ECB7E00691061 /* Products */,
+				4B00FDAC287EE32300EBBCC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		4BA8D4A1287ECB7D00691061 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				4BD1D5CF287ECCB2002C0903 /* Challenges */,
 				4BA8D4A2287ECB7D00691061 /* SwiftUILayoutOneShotApp.swift */,
 				4BA8D4A4287ECB7E00691061 /* Assets.xcassets */,
 			);
@@ -77,22 +86,6 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		4BD1D5CE287ECC83002C0903 /* 001 */ = {
-			isa = PBXGroup;
-			children = (
-				4BD1D5D1287ECCF5002C0903 /* MainView001.swift */,
-			);
-			path = 001;
-			sourceTree = "<group>";
-		};
-		4BD1D5CF287ECCB2002C0903 /* Challenges */ = {
-			isa = PBXGroup;
-			children = (
-				4BD1D5CE287ECC83002C0903 /* 001 */,
-			);
-			path = Challenges;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +102,9 @@
 			dependencies = (
 			);
 			name = "SwiftUILayoutOneShot (iOS)";
+			packageProductDependencies = (
+				4B00FDAD287EE32300EBBCC1 /* AppModule */,
+			);
 			productName = "SwiftUILayoutOneShot (iOS)";
 			productReference = 4BA8D4A9287ECB7E00691061 /* SwiftUILayoutOneShot.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +122,9 @@
 			dependencies = (
 			);
 			name = "SwiftUILayoutOneShot (macOS)";
+			packageProductDependencies = (
+				4B00FDAF287EE33900EBBCC1 /* AppModule */,
+			);
 			productName = "SwiftUILayoutOneShot (macOS)";
 			productReference = 4BA8D4AF287ECB7E00691061 /* SwiftUILayoutOneShot.app */;
 			productType = "com.apple.product-type.application";
@@ -148,7 +147,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4BA8D4A0287ECB7D00691061 /* Build configuration list for PBXProject "SwiftUILayoutOneShot" */;
+			buildConfigurationList = 4BA8D4A0287ECB7D00691061 /* Build configuration list for PBXProject "App" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD1D5D2287ECCF5002C0903 /* MainView001.swift in Sources */,
 				4BA8D4B2287ECB7E00691061 /* SwiftUILayoutOneShotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUILayoutOneShot--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -335,7 +334,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theuhooi.SwiftUILayoutOneShot;
 				PRODUCT_NAME = SwiftUILayoutOneShot;
 				SDKROOT = iphoneos;
@@ -354,6 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUILayoutOneShot--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -364,7 +364,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theuhooi.SwiftUILayoutOneShot;
 				PRODUCT_NAME = SwiftUILayoutOneShot;
 				SDKROOT = iphoneos;
@@ -392,7 +392,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theuhooi.SwiftUILayoutOneShot;
 				PRODUCT_NAME = SwiftUILayoutOneShot;
 				SDKROOT = macosx;
@@ -418,7 +418,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.theuhooi.SwiftUILayoutOneShot;
 				PRODUCT_NAME = SwiftUILayoutOneShot;
 				SDKROOT = macosx;
@@ -430,7 +430,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BA8D4A0287ECB7D00691061 /* Build configuration list for PBXProject "SwiftUILayoutOneShot" */ = {
+		4BA8D4A0287ECB7D00691061 /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BA8D4B8287ECB7E00691061 /* Debug */,
@@ -458,6 +458,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B00FDAD287EE32300EBBCC1 /* AppModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppModule;
+		};
+		4B00FDAF287EE33900EBBCC1 /* AppModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BA8D49D287ECB7D00691061 /* Project object */;
 }
